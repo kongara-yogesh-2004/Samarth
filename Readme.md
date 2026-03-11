@@ -1,7 +1,6 @@
 # Samarth – AI Powered Browser Testing Assistant
 
-Samarth is an AI-powered browser testing assistant that enables users to interact with websites using natural language.  
-It combines **Large Language Models (Google Gemini)** with **Model Context Protocol (MCP)** and **Playwright** to perform automated browser actions and frontend testing through a conversational interface.
+Samarth is an AI-powered browser testing assistant that enables users to interact with websites using natural language. It combines **Large Language Models (Google Gemini)** with **Model Context Protocol (MCP)** and **Playwright** to perform automated browser actions and frontend testing through a conversational interface.
 
 The system allows testers and developers to instruct the AI to browse websites, perform UI interactions, and analyze results without writing manual automation scripts.
 
@@ -46,7 +45,7 @@ Responsibilities:
 ### Workflow
 
 User Query  
-→ FastAPI Server  
+→ FastAPI Backend  
 → Gemini LLM  
 → Tool Selection (MCP)  
 → Playwright Browser Automation  
@@ -61,7 +60,7 @@ User Query
 - HTML  
 - CSS  
 - JavaScript  
-- FontAwesome Icons  
+- FontAwesome  
 
 ### Backend
 - Python  
@@ -73,41 +72,112 @@ User Query
 
 ---
 
+## Project Structure
+
+```
+samarth-ai-tester/
+│
+├── index.html        # Chat-based frontend UI
+├── server.py         # FastAPI backend server
+└── README.md         # Project documentation
+```
+
+---
+
 ## Installation
 
-### 1. Clone the Repository
+Clone the repository and install the required dependencies.
 
 ```bash
 git clone https://github.com/yourusername/samarth-ai-tester.git
 cd samarth-ai-tester
+```
 
-**### 2.Install Python Dependencies**
-'''bash
+Install Python dependencies:
+
+```bash
 pip install fastapi uvicorn google-genai mcp
+```
 
-**### 3. Install Playwright MCP**
+Install Playwright MCP tools:
 
+```bash
 npm install -g @playwright/mcp
+```
 
-**### 4. Set Gemini API Key**
+Set your Gemini API key:
 
-Linux / Mac:
-
+```bash
 export GEMINI_API_KEY="your_api_key"
+```
 
-Windows:
+---
 
-set GEMINI_API_KEY=your_api_key
+## Running the Project
 
+Start the FastAPI backend server:
 
-**### 5.Running the Project
-**
-Start the backend server:
-'''bash
+```bash
 python server.py
+```
 
-**The server will start at:**
+The backend server will start at:
 
+```
 http://localhost:8000
+```
 
-Open the frontend by launching the HTML file in your browser.
+Open the frontend by launching:
+
+```
+index.html
+```
+
+in your browser.
+
+---
+
+## Example Queries
+
+Users can interact with the assistant using natural language commands such as:
+
+- Open google.com  
+- Navigate to amazon.com  
+- Search for laptops  
+- Click the login button  
+- Extract the page title  
+- Test if the navigation bar exists  
+
+---
+
+## Use Cases
+
+- Automated frontend testing  
+- QA automation assistance  
+- AI-driven browser interaction  
+- UI validation and exploratory testing  
+- AI agent-based testing workflows  
+
+---
+
+## Future Improvements
+
+- Multi-session test management  
+- Screenshot-based visual validation  
+- Automatic test case generation  
+- Integration with CI/CD pipelines  
+- Support for multiple browser engines  
+
+---
+
+## Author
+
+**Yogesh Kongara**
+
+Computer Science Student | Full Stack Developer | AI Enthusiast  
+
+GitHub:  
+https://github.com/kongara-yogesh-2004  
+
+LinkedIn:  
+https://linkedin.com/in/yogesh-kongara
