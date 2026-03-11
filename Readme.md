@@ -75,7 +75,7 @@ User Query
 ## Project Structure
 
 ```
-samarth-ai-tester/
+samarth/
 │
 ├── index.html        # Chat-based frontend UI
 ├── server.py         # FastAPI backend server
@@ -89,7 +89,7 @@ samarth-ai-tester/
 Clone the repository and install the required dependencies.
 
 ```bash
-git clone https://github.com/yourusername/samarth-ai-tester.git
+git clone https://github.com/kongara-yogesh-2004/samarth.git
 cd samarth-ai-tester
 ```
 
