@@ -80,3 +80,34 @@ User Query
 ```bash
 git clone https://github.com/yourusername/samarth-ai-tester.git
 cd samarth-ai-tester
+
+**### 2.Install Python Dependencies**
+'''bash
+pip install fastapi uvicorn google-genai mcp
+
+**### 3. Install Playwright MCP**
+
+npm install -g @playwright/mcp
+
+**### 4. Set Gemini API Key**
+
+Linux / Mac:
+
+export GEMINI_API_KEY="your_api_key"
+
+Windows:
+
+set GEMINI_API_KEY=your_api_key
+
+
+**### 5.Running the Project
+**
+Start the backend server:
+'''bash
+python server.py
+
+**The server will start at:**
+
+http://localhost:8000
+
+Open the frontend by launching the HTML file in your browser.
