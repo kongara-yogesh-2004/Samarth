@@ -48,7 +48,7 @@ class MCPClient:
         self.exit_stack = AsyncExitStack()
         
         # Use provided API key or check environment variable
-        self.api_key = api_key or os.environ.get("GEMINI_API_KEY") or "AIzaSyAbjMsZDt2PyIlNONxjp6DVW-TVK91doJE"
+        self.api_key = api_key or os.environ.get("GEMINI_API_KEY") or " "
         self.gemini_client = genai.Client(api_key=self.api_key)
         self.model = "gemini-2.0-flash"
         self.tools = []
